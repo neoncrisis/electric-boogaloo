@@ -8,4 +8,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         # pip.main(['install', '-r', ''])  # todo: pip install from this command
-        call_command('migrate', {'interactive': False})
+        call_command('migrate', **{'interactive': False})
