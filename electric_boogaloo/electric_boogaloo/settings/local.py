@@ -10,8 +10,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'electric_boogaloo',
         'USER': 'django',
-        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'YsPIj03h7hjK14aufQJZpCpyed3mwu'),
-        'HOST': os.getenv('DATABASE_HOST', 'localhost'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD') or 'YsPIj03h7hjK14aufQJZpCpyed3mwu',
+        'HOST': os.getenv('DATABASE_HOST') or 'localhost',
         'PORT': '5432',
     }
 }
